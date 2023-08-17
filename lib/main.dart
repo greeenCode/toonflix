@@ -115,12 +115,14 @@ class App extends StatelessWidget {
                 height: 20,
               ),
               Container(
+                clipBehavior: Clip.hardEdge,
                 padding: const EdgeInsets.all(30),
                 decoration: BoxDecoration(
                   color: const Color(0xff1F2122),
                   borderRadius: BorderRadius.circular(25),
                 ),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -158,6 +160,17 @@ class App extends StatelessWidget {
                           ],
                         ),
                       ],
+                    ),
+                    Transform.scale(
+                      scale: 2.2,
+                      child: Transform.translate(
+                        offset: const Offset(-5, 12),
+                        child: const Icon(
+                          Icons.euro_symbol_sharp,
+                          color: Colors.white,
+                          size: 60,
+                        ),
+                      ),
                     ),
                   ],
                 ),
