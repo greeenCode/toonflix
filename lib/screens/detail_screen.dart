@@ -116,8 +116,10 @@ class DetailScreen extends StatelessWidget {
                           Container(
                             margin: const EdgeInsets.only(bottom: 10),
                             decoration: BoxDecoration(
-                                color: Colors.green.shade400,
+                                color: Colors.white,
                                 borderRadius: BorderRadius.circular(20),
+                                border:
+                                    Border.all(color: Colors.green, width: 2),
                                 boxShadow: const [
                                   BoxShadow(
                                     blurRadius: 5,
@@ -136,7 +138,7 @@ class DetailScreen extends StatelessWidget {
                                     child: Text(
                                       episode.title,
                                       style: const TextStyle(
-                                        color: Colors.white,
+                                        color: Colors.green,
                                         fontSize: 18,
                                       ),
                                       overflow: TextOverflow.ellipsis,
@@ -144,7 +146,7 @@ class DetailScreen extends StatelessWidget {
                                   ),
                                   const Icon(
                                     Icons.chevron_right_rounded,
-                                    color: Colors.white,
+                                    color: Colors.green,
                                   ),
                                 ],
                               ),
